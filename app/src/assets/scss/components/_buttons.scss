@@ -1,0 +1,32 @@
+#index {
+    #wrapper {
+        .btn {
+            background-color: #000080;
+            padding: 13px;
+            font-weight: bold;
+            border-color: #000080;
+            &:hover {
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                text-decoration: none;
+            }
+        }
+        .btn-default {
+            border: 2px solid #ee1f72;
+            background: white;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            display: block;
+            margin-bottom: 8px;
+            margin-right: 10px;
+            color: #ee1f72;
+            &:hover {
+             background-color: #ee1f72;
+             color: white;
+            }
+        }
+    }
+}

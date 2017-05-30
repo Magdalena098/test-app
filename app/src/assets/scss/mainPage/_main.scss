@@ -1,0 +1,104 @@
+
+#index {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FDF5E6;
+    #wrapper {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+        #favourites {
+            width: 80%;
+            background-color: white;
+            border-radius: 5px;
+            article {
+                ul {
+                    li {
+                        list-style: none;
+                        display: inline-flex;
+                    }
+                    span.glyphicon {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        #recipes {
+            .filters {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding: 30px;
+                input {
+                    border: 5px solid gray;
+                    padding: 10px;
+                    margin-right: 5px;
+                }
+            }
+            .flex-grid-thirds {
+                margin-left: auto;
+                width: 95%;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                .slide.ng-move, .slide.ng-enter, .slide.ng-leave {
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                }
+                .slide.ng-leave.ng-leave-active, .slide.ng-move, .slide.ng-enter {
+                    opacity: 0;
+                }
+                .slide.ng-leave, .slide.ng-move.ng-move-active, .slide.ng-enter.ng-enter-active {
+                    opacity: 1;
+                }
+                .slide {
+                    width: 45%;
+                    display: inline-flex;
+                    padding: 5px;
+                    margin: 10px 0 10px 0;
+                    ul {
+                        li.glyphicon-star {
+                            font-size: 25px;
+                            cursor: pointer;
+                            color: #ee1f72;
+                            position: relative;
+                            top: 8px;
+
+                            &:hover {
+                              color: white;
+                            }
+                        }
+                        li {
+                            list-style: none;
+                            font-size: 16px;
+                            line-height: 1.9;
+                            display: inline;
+                            margin-right: 5px;
+                            img {
+                                width: 100%;
+                                height: auto;
+                                border: 3px solid black;
+                                margin-top: 15px;
+                                margin-bottom: 15px;
+                                position: relative;
+                                border-radius: 7px;
+                                &:hover {
+                                    -webkit-transition: all 0.3s ease-in-out;
+                                    -moz-transition: all 0.3s ease-in-out;
+                                    -o-transition: all 0.3s ease-in-out;
+                                    transition: all 0.3s ease-in-out;
+                                    border: 3px solid #FDF5E6;
+                                    opacity: 0.7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@import "responsive";

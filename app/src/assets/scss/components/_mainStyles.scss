@@ -1,0 +1,69 @@
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Lucida" Grande, sans-serif;
+}
+body {
+    margin: .0;
+    background-color: #DCDCDC !important;
+    a {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    }
+    ul {
+      li {
+        list-style: none;
+      }
+   }
+}
+
+@font-face{ 
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot');
+    src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'),
+         url('../fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('../fonts/bootstrap/glyphicons-halflings-regular.svg#webfont') format('svg');
+}
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+html,
+body {
+    margin: .0;
+    h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        line-height: 24px;
+    }
+    a {
+        cursor: pointer;
+        line-height: 20px;
+    }
+    ul {
+        li {
+            list-style: none;
+            line-height: 20px;
+        }
+    }
+}

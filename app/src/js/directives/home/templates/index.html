@@ -1,0 +1,47 @@
+<div id="favourites">
+   <article>
+      <ul ng-repeat="fav in data.recipes">
+         <li>{{fav.name}}</li>
+         <li>{{fav.id}}</li>
+         <span class="glyphicon glyphicon-remove" ng-click="octopus.removeRecipe(fav)"></span>
+      </ul>
+   </article>
+</div>
+<div id="recipes" ng-if="ourData">
+   <div class="filters" ng-hide="ourData.length <= 0">
+      <input ng-model="userInput.name" type="text" placeholder="Filter by name">
+      <input ng-model="userInput.cookingTime" type="text" placeholder="Filter by cooking time">
+      <input ng-model="userInput.mainIngredients" type="text" placeholder="Filter by ingredients">
+   </div>
+   <article ng-if="(ourData|filter:userInput).length == 0">
+      <h3>Sorry, nothing matched your filter term</h3>
+   </article>
+   <div class="flex-grid-thirds">
+      <article class="slide" ng-repeat="items in ourData | filter: userInput">
+         <ul>
+            <li><strong>{{items.name}}</strong></li>
+            <li>{{items.cookingTime}}</li>
+            <li>
+               <a href="#/recipes/{{items.id}}"><img src="{{items.image}}" alt="recipe "></a>
+            </li>
+            <li>
+               <strong>main ingredients</strong>
+               <ul ng-repeat="mainIngredient in items.mainIngredients">
+                  <li>{{mainIngredient}}</li>
+               </ul>
+            </li>
+            <li>
+               <strong>all ingredients</strong>
+               <ul ng-repeat="ingredient in items.ingredients">
+                  <li>{{ingredient.quantity}}</li>
+                  <li>{{ingredient.name}}</li>
+               </ul>
+            </li>
+            <li class="glyphicon glyphicon-star btn btn-default" ng-click="octopus.addRecipe(items)">favourites</li>
+         </ul>
+      </article>
+   </div>
+</div>
+<div ng-show="ourData.length <= 0">
+   Sorry, we currently have no recipes for you
+</div>

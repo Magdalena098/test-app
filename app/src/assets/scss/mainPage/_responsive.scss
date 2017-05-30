@@ -1,0 +1,27 @@
+@media screen and (max-width:500px) {
+    #index {
+        #wrapper {
+            #recipes {
+                .filters {
+                    width: 100%;
+                    float: none;
+                }
+                .flex-grid-thirds {
+                    width: 90%;
+                    margin-left: 0;
+                    .slide {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 0;
+                        display: block;
+                        .btn {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

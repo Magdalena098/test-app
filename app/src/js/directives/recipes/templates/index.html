@@ -1,0 +1,15 @@
+<div id="details">
+   <article class="description">
+      <ul>
+         <li>{{item.info}}</li>
+         <li>{{item.desc}}</li>
+      </ul>
+   </article>
+   <article class="images">
+      <ul ng-repeat="detail in item.images">
+         <li id="myImg"><img src="src/assets/images/{{detail.image}}.jpg" alt="recipe"></li>
+         <li><img id="myImg" src="src/assets/images/{{detail.image_one}}.jpg" alt="recipe"></li>
+      </ul>
+      <button ng-click="navigateBack()" class="btn btn-primary">Go Back</button>
+   </article>
+</div>

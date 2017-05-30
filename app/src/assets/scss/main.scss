@@ -1,0 +1,14 @@
+$img_path: '../images';
+
+//components
+@import "components/_mainStyles";
+@import "components/_buttons";
+
+// modules
+@import "mainPage/_main";
+@import "detailsPage/_main";
+
+// libraries
+@import "lib/bootstrap/bootstrap";
+@import "lib/bootstrapExt/select";
+@import "lib/ngUiSwitch";
