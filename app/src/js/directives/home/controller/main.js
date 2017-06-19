@@ -23,11 +23,11 @@ app.controller('ajaxCtrl', ['$scope', '$rootScope', 'AjaxFactory', '$filter', '$
         },
 
         addRecipe: function(value) {
-          var match = this.findMatch(value);
-          if (match) {
-                match.id += 1;
-                return;
-            }
+          // var match = this.findMatch(value);
+          // if (match) {
+          //       match.id += 1;
+          //       return;
+          //   }
             var itemToPush = angular.copy(value);
             itemToPush.id = 1;
             if (itemToPush.id === 'undefined') {
